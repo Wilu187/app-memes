@@ -1,29 +1,62 @@
-.App {
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-}
+/*Style memów*/
 
 .mem-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin: auto;
 }
 
 .mem {
   border: 1px solid #ccc;
   padding: 20px;
   margin: 10px;
+  margin-bottom: 20px;
   text-align: center;
-  width: 200px;
+  max-width: 600px;
+  height: auto;
 }
 
 .mem img {
   max-width: 100%;
   height: auto;
+}
+
+.mem-list {
+  max-height: none;
+  overflow-y: auto;
+}
+
+/*Styl nawigacja*/
+
+nav {
+  text-align: left;
+  margin-top: 50px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+nav button {
+  display: block;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #0056b3;
 }

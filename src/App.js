@@ -10,10 +10,14 @@ const App = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/hot">Hot</Link>
+              <Link to="/hot">
+                <button>Hot</button>
+              </Link>
             </li>
             <li>
-              <Link to="/regular">Regular</Link>
+              <Link to="/regular">
+                <button>Regular</button>
+              </Link>
             </li>
           </ul>
         </nav>
