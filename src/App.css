@@ -1,4 +1,4 @@
-/*Style memów*/
+/*Lista memow*/
 
 .mem-list {
   display: flex;
@@ -28,7 +28,7 @@
   overflow-y: auto;
 }
 
-/*Styl nawigacja*/
+/*Nawigacja*/
 
 nav {
   text-align: left;

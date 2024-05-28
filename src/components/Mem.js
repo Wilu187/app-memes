@@ -1,20 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Mem = ({ title, img }) => {
-  const [votes, setVotes] = useState(0);
-
-  const handleVote = (value) => {
-    setVotes((prevVotes) => prevVotes + value);
-  };
-
+const Mem = ({ title, img, votes, onVote }) => {
   return (
     <div className="mem">
       <h2>{title}</h2>
       <img src={img} alt={title} />
-      <div>
-        <button onClick={() => handleVote(1)}>+</button>
+      <div className="votes">
+        <button onClick={() => onVote(1)}>+</button>
         <span>{votes}</span>
-        <button onClick={() => handleVote(-1)}>-</button>
+        <button onClick={() => onVote(-1)}>-</button>
       </div>
     </div>
   );
