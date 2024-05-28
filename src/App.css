@@ -1,38 +1,26 @@
-/*Lista memow*/
-
-.mem-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-  margin: auto;
+/*Tlo*/
+body {
+  background-color: #333; /* Ciemnoszare tło */
+  color: #fff; /* Białe napisy */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.mem {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 10px;
-  margin-bottom: 20px;
+.App {
   text-align: center;
-  max-width: 600px;
-  height: auto;
-}
-
-.mem img {
-  max-width: 100%;
-  height: auto;
-}
-
-.mem-list {
-  max-height: none;
-  overflow-y: auto;
 }
 
 /*Nawigacja*/
-
 nav {
-  text-align: left;
-  margin-top: 50px;
+  background-color: #444;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
@@ -42,21 +30,76 @@ nav ul {
 
 nav li {
   margin-bottom: 20px;
-  margin-left: 40px;
 }
 
+nav a,
 nav button {
   display: block;
   padding: 15px 30px;
-  font-size: 18px;
+  font-size: 28px;
   border: none;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #ff9800;
+  color: #000;
+  text-decoration: none;
   cursor: pointer;
   border-radius: 10px;
   transition: background-color 0.3s;
 }
 
+nav a:hover,
 nav button:hover {
-  background-color: #0056b3;
+  background-color: #e68900;
+}
+
+/*memy*/
+.mem-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  margin-top: 100px;
+  padding-left: 220px;
+}
+
+.mem {
+  background-color: #555;
+  border: 1px solid #777;
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.mem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*przycisk vote*/
+button {
+  background-color: #ff9800;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #e68900;
+}
+
+button:focus {
+  outline: none;
+}
+
+.vote-count {
+  font-size: 20px;
+  margin-top: 10px;
 }
